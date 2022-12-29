@@ -6,10 +6,20 @@
 
 .signIn {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
 }
 
 .singUp {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
 }
 
 .overLap {
@@ -19,4 +29,13 @@
     background-color: #333;
     z-index: 2;
     transition: 1s;
+}
+
+.title {
+    margin-bottom: 3rem;
+}
+
+.btn {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
