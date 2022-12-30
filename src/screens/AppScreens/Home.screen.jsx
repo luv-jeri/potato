@@ -3,11 +3,23 @@ import { Button } from '@mantine/core';
 import { useAuth } from '../../context/AuthContext';
 
 export default function HomeScreen() {
-  const { handleSignOut } = useAuth();
+  const { handleSignOut, user } = useAuth();
   return (
     <div>
       Home.screen
-      <Button onClick={handleSignOut}>Button</Button>
+      <h1>
+        Welcome {user.name} {user.email}
+      </h1>
+      <img
+        src={user.DP_URL}
+        alt={user.name}
+        style={{
+          width: '100px',
+          height: '100px',
+          borderRadius: '50%',
+        }}
+      />
+      <Button onClick={handleSignOut}>Logout</Button>
     </div>
   );
 }
